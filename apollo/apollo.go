@@ -74,7 +74,7 @@ const (
 	RetryConfigName          = "retry"
 	RpcTimeoutConfigName     = "rpc_timeout"
 	CircuitBreakerConfigName = "circuit_break"
-
+	DegradationConfigName    = "degradation"
 	LimiterConfigName = "limit"
 )
 

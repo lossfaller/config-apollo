@@ -38,7 +38,6 @@ func WithCircuitBreaker(dest, src string, apolloClient apollo.Client,
 	if err != nil {
 		panic(err)
 	}
-
 	for _, f := range opts.ApolloCustomFunctions {
 		f(&param)
 	}

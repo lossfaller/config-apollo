@@ -48,5 +48,6 @@ func (s *ApolloClientSuite) Options() []client.Option {
 	opts = append(opts, WithRetryPolicy(s.service, s.client, s.apolloClient, s.opts)...)
 	opts = append(opts, WithRPCTimeout(s.service, s.client, s.apolloClient, s.opts)...)
 	opts = append(opts, WithCircuitBreaker(s.service, s.client, s.apolloClient, s.opts)...)
+	opts = append(opts, WithDegradation(s.service, s.client, s.apolloClient, s.opts)...)
 	return opts
 }
