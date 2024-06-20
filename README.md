@@ -281,6 +281,28 @@ key: `ClientName.ServiceName`
   }
 }
 ```
+
+##### Degradation: Category=degradation
+
+[JSON Schema](https://github.com/cloudwego/kitex/blob/develop/pkg/circuitbreak/item_circuit_breaker.go#L30)
+
+| Variable   | Introduction                       |
+|------------|------------------------------------|
+| enable     | Whether to enable degradation      |
+| percentage | The percentage of dropped requests | 
+
+Example：
+
+> configPath: /KitexConfig/ClientName/ServiceName/degradation
+
+```json
+{
+  "enable": true,
+  "percentage": 30
+}
+```
+Note: Degradation is not enabled by default.
+
 ### More Info
 
 Refer to [example](https://github.com/kitex-contrib/examples/config/apollo) for more usage.
